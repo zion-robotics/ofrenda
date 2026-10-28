@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ofrenda for request</title>
+<style>
+  :root { --bg:#0d0b10; --card:#171320; --stone:#2a2433; --text:#e8e2d6; --muted:#9b93a6; --gold:#f2a33a; --marigold:#ff8c1a; --alive:#5fb3a8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:radial-gradient(ellipse at top, #1b1526 0%, var(--bg) 60%); color:var(--text);
+         font-family: Georgia, 'Times New Roman', serif; line-height:1.65; }
+  .petals { height:14px; background:
+      radial-gradient(circle at 10px 7px, var(--marigold) 5px, transparent 6px) 0 0/28px 14px repeat-x,
+      radial-gradient(circle at 24px 7px, #ffc247 4px, transparent 5px) 0 0/28px 14px repeat-x; opacity:.85; }
+  main { max-width:820px; margin:0 auto; padding:44px 20px 80px; }
+  h1 { color:var(--gold); font-weight:normal; letter-spacing:.06em; margin:0 0 6px; font-size:2rem; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .score { display:inline-block; border:1px solid var(--gold); color:var(--gold); padding:6px 14px; border-radius:999px; font-size:.95rem; }
+  .flame { display:inline-block; width:9px; height:15px; margin-right:8px; vertical-align:-1px;
+           background:radial-gradient(ellipse at 50% 70%, #fff3b0 0%, #ffb02e 45%, #ff6a00 80%, transparent 100%);
+           border-radius:50% 50% 50% 50% / 65% 65% 35% 35%; animation:flicker 1.8s infinite alternate; box-shadow:0 0 12px 3px rgba(255,150,30,.45); }
+  @keyframes flicker { 0%{opacity:.7; transform:scale(.92) rotate(-3deg);} 50%{opacity:1;} 100%{opacity:.85; transform:scale(1.08) rotate(3deg);} }
+  .ghost { display:flex; gap:22px; margin:34px 0; align-items:flex-start; }
+  .stone { flex:0 0 210px; background:linear-gradient(#332b3f, var(--stone)); border:1px solid #3d3549;
+           border-radius:105px 105px 8px 8px; padding:34px 18px 22px; text-align:center; box-shadow:0 0 26px rgba(255,140,26,.08); }
+  .stone h2 { margin:6px 0 2px; color:var(--gold); font-weight:normal; font-size:1.15rem; line-height:1.3; }
+  .years { margin:0 0 12px; color:var(--muted); font-size:.85rem; letter-spacing:.12em; }
+  .epitaph { margin:0; font-style:italic; font-size:.92rem; color:var(--text); }
+  .words { flex:1; background:var(--card); border-left:3px solid var(--marigold); border-radius:6px; padding:18px 22px; }
+  .meta { color:var(--muted); font-size:.85rem; margin:0 0 10px; }
+  .story { margin:0; }
+  h3 { color:var(--gold); font-weight:normal; margin-top:50px; }
+  ul { padding-left:20px; color:var(--muted); }
+  .row { display:flex; align-items:center; gap:12px; margin:6px 0; font-size:.88rem; }
+  .who { flex:0 0 150px; color:var(--muted); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .track { position:relative; flex:1; height:12px; background:#1a1522; border-radius:6px; }
+  .bar { position:absolute; top:0; height:12px; border-radius:6px; }
+  .bar.gone { background:linear-gradient(90deg, #7a4a12, var(--marigold)); }
+  .bar.here { background:var(--alive); }
+  .axis { display:flex; justify-content:space-between; margin:4px 0 0 162px; color:var(--muted); font-size:.78rem; }
+  .legend { color:var(--muted); font-size:.82rem; margin-top:10px; }
+  footer { margin-top:50px; color:var(--muted); font-size:.85rem; }
+  @media (max-width:640px) { .ghost { flex-direction:column; align-items:stretch; } .stone { flex-basis:auto; } .who { flex-basis:90px; } .axis { margin-left:102px; } }
+</style>
+</head>
+<body>
+<div class="petals"></div>
+<main>
+  <h1><span class="flame"></span>Ofrenda for request</h1>
+  <p class="sub">An offering for the developers this project no longer hears from.</p>
+  <p><span class="score">344 of 344 contributors have gone quiet. Haunting level 100%</span></p>
+  <section class="ghost">
+    <div class="stone">
+      <span class="flame"></span>
+      <h2>Mikeal Rogers</h2>
+      <p class="years">2010 to 2020</p>
+      <p class="epitaph">&ldquo;doc: note full deprecation (#3267)&rdquo;</p>
+    </div>
+    <div class="words">
+      <p class="meta">May 7, 2010 to February 11, 2020 &middot; 623 commits &middot; last seen 6 years ago</p>
+      <p class="story">Mikeal, your last words were “doc: note full deprecation (#3267)”, and package.json stands alone in the silence of its absence. The code you crafted now echoes with a forgotten purpose, a ghost of your work lingering within the file.</p>
+    </div>
+  </section>
+  <section class="ghost">
+    <div class="stone">
+      <span class="flame"></span>
+      <h2>James Nylen</h2>
+      <p class="years">2012 to 2015</p>
+      <p class="epitaph">&ldquo;Merge pull request #1585 from mainakae/patch-1&rdquo;</p>
+    </div>
+    <div class="words">
+      <p class="meta">October 9, 2012 to May 18, 2015 &middot; 300 commits &middot; last seen 11 years ago</p>
+      <p class="story">Tonight, the flame flickers softly within its depths.</p>
+    </div>
+  </section>
+  <h3>Who stayed, and who left</h3>
+  <div class="row"><span class="who">Mikeal Rogers</span><div class="track"><div class="bar gone" style="left:0.0%;width:59.3%"></div></div></div>
+  <div class="row"><span class="who">isaacs</span><div class="track"><div class="bar gone" style="left:8.1%;width:18.2%"></div></div></div>
+  <div class="row"><span class="who">Brian White</span><div class="track"><div class="bar gone" style="left:13.5%;width:25.9%"></div></div></div>
+  <div class="row"><span class="who">James Nylen</span><div class="track"><div class="bar gone" style="left:14.7%;width:15.8%"></div></div></div>
+  <div class="row"><span class="who">Maciej Małecki</span><div class="track"><div class="bar gone" style="left:16.1%;width:11.6%"></div></div></div>
+  <div class="row"><span class="who">Lalit Kapoor</span><div class="track"><div class="bar gone" style="left:22.0%;width:5.1%"></div></div></div>
+  <div class="row"><span class="who">Eirik S. Morland</span><div class="track"><div class="bar gone" style="left:25.1%;width:9.8%"></div></div></div>
+  <div class="row"><span class="who">Fred K. Schott</span><div class="track"><div class="bar gone" style="left:26.0%;width:16.2%"></div></div></div>
+  <div class="row"><span class="who">seanstrom</span><div class="track"><div class="bar gone" style="left:26.2%;width:4.2%"></div></div></div>
+  <div class="row"><span class="who">FredKSchott</span><div class="track"><div class="bar gone" style="left:26.7%;width:1.2%"></div></div></div>
+  <div class="row"><span class="who">simov</span><div class="track"><div class="bar gone" style="left:27.0%;width:23.0%"></div></div></div>
+  <div class="row"><span class="who">simo</span><div class="track"><div class="bar gone" style="left:28.3%;width:21.7%"></div></div></div>
+  <div class="axis"><span>2010</span><span>today</span></div>
+  <p class="legend">Orange: has gone quiet. Green: still around.</p>
+  <h3>Cursed files</h3>
+  <ul>
+    <li>LICENSE, last touched by Mikeal Rogers (15 years ago)</li>
+    <li>tests/ssl/test.crt, last touched by Jason Smith (air) (14 years ago)</li>
+    <li>tests/ssl/test.key, last touched by Jason Smith (air) (14 years ago)</li>
+    <li>tests/ssl/ca/ca.cnf, last touched by isaacs (14 years ago)</li>
+    <li>tests/ssl/ca/ca.crl, last touched by isaacs (14 years ago)</li>
+  </ul>
+  <footer>Facts come from the git history. Words written by gemma3:1b, running offline on one laptop.</footer>
+</main>
+<div class="petals"></div>
+</body>
+</html>

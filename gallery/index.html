@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ofrenda Gallery</title>
+<style>
+  :root { --bg:#0d0b10; --card:#171320; --text:#e8e2d6; --muted:#9b93a6; --gold:#f2a33a; --marigold:#ff8c1a; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:radial-gradient(ellipse at top, #1b1526 0%, var(--bg) 60%); color:var(--text);
+         font-family: Georgia, 'Times New Roman', serif; line-height:1.65; }
+  .petals { height:14px; background:
+      radial-gradient(circle at 10px 7px, var(--marigold) 5px, transparent 6px) 0 0/28px 14px repeat-x,
+      radial-gradient(circle at 24px 7px, #ffc247 4px, transparent 5px) 0 0/28px 14px repeat-x; opacity:.85; }
+  main { max-width:900px; margin:0 auto; padding:44px 20px 80px; }
+  h1 { color:var(--gold); font-weight:normal; letter-spacing:.06em; margin:0 0 6px; font-size:2.1rem; }
+  .sub { color:var(--muted); margin:0 0 34px; max-width:640px; }
+  .flame { display:inline-block; width:9px; height:15px; margin-right:8px; vertical-align:-1px;
+           background:radial-gradient(ellipse at 50% 70%, #fff3b0 0%, #ffb02e 45%, #ff6a00 80%, transparent 100%);
+           border-radius:50% 50% 50% 50% / 65% 65% 35% 35%; animation:flicker 1.8s infinite alternate; box-shadow:0 0 12px 3px rgba(255,150,30,.45); }
+  @keyframes flicker { 0%{opacity:.7; transform:scale(.92) rotate(-3deg);} 50%{opacity:1;} 100%{opacity:.85; transform:scale(1.08) rotate(3deg);} }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(380px, 1fr)); gap:22px; }
+  a.card { display:block; text-decoration:none; color:inherit; background:var(--card); border:1px solid #2b2437;
+           border-left:3px solid var(--marigold); border-radius:8px; padding:20px 22px; transition:transform .15s, box-shadow .15s; }
+  a.card:hover { transform:translateY(-3px); box-shadow:0 0 24px rgba(255,140,26,.18); }
+  a.card h2 { margin:0 0 8px; color:var(--gold); font-weight:normal; font-size:1.25rem; word-break:break-word; }
+  .score { display:inline-block; border:1px solid var(--gold); color:var(--gold); padding:2px 10px; border-radius:999px; font-size:.78rem; }
+  .who { margin:14px 0 2px; color:var(--gold); }
+  .epitaph { margin:0 0 10px; font-style:italic; color:var(--muted); font-size:.92rem; }
+  .story { margin:0 0 14px; font-size:.95rem; }
+  .open { color:var(--marigold); font-size:.88rem; }
+  footer { margin-top:50px; color:var(--muted); font-size:.85rem; }
+  footer a { color:var(--gold); }
+</style>
+</head>
+<body>
+<div class="petals"></div>
+<main>
+  <h1><span class="flame"></span>Ofrenda Gallery</h1>
+  <p class="sub">Remembrances for the developers these open-source projects no longer hear from. Facts come from public git history. The words were written offline by gemma3:1b on one small laptop.</p>
+  <div class="grid">
+    <a class="card" href="request.html">
+      <h2>request</h2>
+      <span class="score">344 of 344 contributors have gone quiet. Haunting level 100%</span>
+      <p class="who">Mikeal Rogers</p>
+      <p class="epitaph">&ldquo;doc: note full deprecation (#3267)&rdquo;</p>
+      <p class="story">Mikeal, your last words were “doc: note full deprecation (#3267)”, and package.json stands alone in the silence of its absence. The code you crafted now echoes with a forgotten purpose, a ghost of your work lingering within the file.</p>
+      <span class="open">Open the full offering &rarr;</span>
+    </a>
+    <a class="card" href="bower.html">
+      <h2>bower</h2>
+      <span class="score">259 of 259 contributors have gone quiet. Haunting level 100%</span>
+      <p class="who">André Cruz</p>
+      <p class="epitaph">&ldquo;Merge branch &#x27;master&#x27; of github.com:bower/bower into link-install-deps&rdquo;</p>
+      <p class="story">André, your last words were “Merge branch &#x27;master&#x27; of github.com:bower/bower into link-install-deps”, a task completed long ago. Tonight, the memory of your work still lingers within the code of package.json.</p>
+      <span class="open">Open the full offering &rarr;</span>
+    </a>
+  </div>
+  <footer></footer>
+</main>
+<div class="petals"></div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# One GitHub link per line. Lines starting with # are ignored.
+# Pick projects with many contributors, ideally ones that went quiet.
+# Folder paths on your own computer work too.
+https://github.com/request/request
+https://github.com/bower/bower
